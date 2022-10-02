@@ -1,0 +1,13 @@
+mutation UpdateUser ($statusData: String, $commentary: String, $id: ID) {
+    updateSilveira(
+        data: {statusData: $statusData, commentary: $commentary}
+        where: {id: $id}
+    ) {
+        statusData
+    }
+
+    publishSilveira(where: {id: $id}) {
+        id
+    }
+}
+

@@ -1,0 +1,10 @@
+mutation TestMutation ($name: String!, $email: String!, $company: String!, $section: String!, $phone: String!, $message: String) {
+  createSilveira(data: {name: $name, email: $email, company: $company, section: $section, phone: $phone, statusData: "Em Análise", message: $message, commentary: "Ainda não há comentários"}) {
+    id
+    email
+  }
+
+  publishSilveira(where: {email: $email}, to: PUBLISHED) {
+    id
+  }
+}

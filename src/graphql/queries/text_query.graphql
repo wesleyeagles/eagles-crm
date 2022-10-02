@@ -1,0 +1,11 @@
+query Test{
+  silveiras (orderBy: publishedAt_DESC, first: 5) {
+    id
+    company
+    email
+    name
+    phone
+    section
+    statusData
+  }
+}

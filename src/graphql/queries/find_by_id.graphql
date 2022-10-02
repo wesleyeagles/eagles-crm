@@ -1,0 +1,15 @@
+query FindById ($id: ID) {
+  silveira(where: {id: $id}) {
+    name
+    phone
+    section
+    statusData
+    email
+    id
+    company
+    message
+    commentary
+    createdAt
+    updatedAt
+  }
+}
